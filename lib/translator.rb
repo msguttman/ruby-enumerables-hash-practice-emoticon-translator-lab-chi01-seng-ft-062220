@@ -15,12 +15,16 @@ end
 def get_english_meaning(file, emoticon_to_find)
   # code goes here
   emoticons = load_library(file)
+  meaning = ""
   emoticons.map { |k, v| 
   if v[:japanese] == emoticon_to_find
-  return k
-  else return "Sorry, that emoticon was not found"
+  meaning << k
   end
   }
+  if meaning == ""
+    return "Sorry, that emoticon was not found"
+  else
+    return meaning
 end
 
 
