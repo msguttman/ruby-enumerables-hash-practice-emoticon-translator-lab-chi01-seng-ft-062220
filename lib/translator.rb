@@ -13,7 +13,7 @@ end
 
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, emoticon_to_find)
   # code goes here
   emoticons = load_library(file)
   emoticons.map { |k, v|
