@@ -34,10 +34,12 @@ end
 def get_japanese_emoticon(file, emoticon_to_find)
   # code goes here
   emoticons = load_library(file)
+  japanese_version = ""
   emoticons.map { |k, v|
-  v[:english] == emoticon_to_find
-  k
-} 
+  if v[:english] == emoticon_to_find
+    japanese_version << v[:japanese]
+  end
+  }
 end
 
 
