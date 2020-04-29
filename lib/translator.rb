@@ -40,7 +40,11 @@ def get_japanese_emoticon(file, emoticon_to_find)
     japanese_version << v[:japanese]
   end
   }
-  japanese_version
+  if  japanese_version ==
+    return "Sorry, that emoticon was not found"
+  else
+    return japanese_version
+  end
 end
 
 
