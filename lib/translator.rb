@@ -14,13 +14,12 @@ end
 
 def get_english_meaning
   # code goes here
-    emoticons = load_library(file)
+  emoticons = load_library(file)
   emoticons.map { |k, v| 
   if v[:japanese] == emoticon_to_find
   v[:japanese]
   end
   }
-  
 end
 
 
