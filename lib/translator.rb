@@ -40,6 +40,7 @@ def get_japanese_emoticon(file, emoticon_to_find)
     japanese_version << v[:japanese]
   end
   }
+  japanese_version
 end
 
 
