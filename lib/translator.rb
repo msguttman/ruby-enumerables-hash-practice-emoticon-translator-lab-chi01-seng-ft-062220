@@ -30,7 +30,7 @@ def get_japanese_emoticon(file, emoticon_to_find)
   emoticons = load_library(file)
   emoticons.map { |k, v|
   v[:english] == emoticon_to_find
-  v[:japanese]
+  k
 } 
 end
 
