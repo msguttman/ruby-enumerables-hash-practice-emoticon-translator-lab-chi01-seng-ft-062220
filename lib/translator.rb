@@ -17,7 +17,7 @@ def get_english_meaning(file, emoticon_to_find)
   emoticons = load_library(file)
   emoticons.map { |k, v| 
   if v[:japanese] == emoticon_to_find
-  return v[:japanese]
+  return k
   end
   }
 end
