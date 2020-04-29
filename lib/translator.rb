@@ -12,7 +12,7 @@ translated_hash
 end
 
 
-def get_english_meaning
+def get_english_meaning(file, emoticon_to_find)
   # code goes here
   emoticons = load_library(file)
   emoticons.map { |k, v| 
